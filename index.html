@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «KotZona»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «KotZona»</h1>
+		<div class="rootpage__info">
+			Особенности проекта:
+			<p>
+				- Сделан адаптив до 320px, так как много устройств на данный момент имеют расширение рабочей области экрана
+				менее
+				заявленных размеров в макете
+			</p>
+			<p>
+				- Сделан меню "бургер в личном кабинете"
+			</p>
+			<p>
+				- Добавлен бургер на меню личного кабинета
+			</p>
+		</div>
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Home</a></li>
+			<li><a target="_blank" href="about.html">About</a></li>
+			<li><a target="_blank" href="mainstatistic.html">Main statistic</a></li>
+			<li><a target="_blank" href="faq.html">FAQ</a></li>
+			<li><a target="_blank" href="rules.html">Rules</a></li>
+			<li><a target="_blank" href="contacts.html">Contacts</a></li>
+			<li><a target="_blank" href="progpambonus.html">Program</a></li>
+			<li><a target="_blank" href="log.html">Log in</a></li>
+			<li><a target="_blank" href="registratio.html">Rigistration</a></li>
+			<li><a target="_blank" href="contacts.html">Contacts</a></li>
+			<li><a target="_blank" href="recovery.html">Восстановление пароля</a></li>
+		</ol>
+		<h2>Страницы личного кабинета:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="account.html">Account</a></li>
+			<li><a target="_blank" href="balance.html">Balance</a></li>
+			<li><a target="_blank" href="banners.html">Banners</a></li>
+			<li><a target="_blank" href="deposit.html">Deposit</a></li>
+			<li><a target="_blank" href="history.html">History</a></li>
+			<li><a target="_blank" href="invest.html">Invest</a></li>
+			<li><a target="_blank" href="referrals.html">Referrals</a></li>
+			<li><a target="_blank" href="settings.html">Settings</a></li>
+			<li><a target="_blank" href="withdrawal.html">Withdrawal</a></li>
+			<li><a target="_blank" href="bonuslk.html">Cтраница бонус+ в личном кабинете!</a></li>
+			<li><a target="_blank" href="referalsystem.html">Реферальная система</a></li>
+
+		</ol>
+		<h2>Модальные окна:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="deposit.html#popup">One</a></li>
+			<li><a target="_blank" href="deposit.html#popup_info">Two</a></li>
+			<li><a target="_blank" href="recovery.html#popup_mess">three</a></li>
+
+		</ol>
+		<div class="rootpage__tnx">
+			<h2>Спасибо за заказ!</h2>
+
+			<p>Обращайтесь еще!</p>
+		</div>
+		<div class="rootpage__contacts">
+			<h2>Мои контакты:</h2>
+			<p>Почта: <a href="whoisleshalight@gmail.com">whoisleshalight@gmail.com</a></p>
+			<p>Телеграм: <a href="tg://resolve?domain=whoisleshalight">whoisleshalight</a></p>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #5e5373;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #ebe691
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #aaa768;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #ebe691;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #ebe691;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>
